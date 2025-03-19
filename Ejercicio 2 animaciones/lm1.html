@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>LM1</title>
+<!--tipografía google: Outfit-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body class="flex-center">
+
+  <section class="cards-container">
+    <div class="card-container flex-center">
+      <div class="img-container">
+        <img src="logo-centro.png" alt="">
+      </div>
+      <h1>Minions ipsum gelatooo uuuhhh</h1>
+      <p>Gelatooo para tú aaaaaah chasy wiiiii wiiiii daa hahaha me want bananaaa! Butt po kass gelatooo hahaha.</p>
+    </div>
+    <div class="card-container flex-center">
+      <div class="img-container">
+        <img src="logo-centro.png" alt="">
+      </div>
+      <h1>Minions ipsum gelatooo uuuhhh</h1>
+      <p>Gelatooo para tú aaaaaah chasy wiiiii wiiiii daa hahaha me want bananaaa! Butt po kass gelatooo hahaha.</p>
+    </div>
+    
+    <div class="card-container flex-center">
+      <div class="img-container">
+        <img src="logo-centro.png" alt="">
+      </div>
+      <h1>Minions ipsum gelatooo uuuhhh</h1>
+      <p>Gelatooo para tú aaaaaah chasy wiiiii wiiiii daa hahaha me want bananaaa! Butt po kass gelatooo hahaha.</p>
+    </div>
+  </section>
+</body>
+<style>
+  .flex-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* horizontal */;
+    align-items: center; /* vertical */
+  }
+  body{
+    background-color: #D6E2EF;
+    height: 100svh; /* small vertical height toma en cuenta la altura de la barra de navegacion*/
+  }
+
+  .cards-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; /* horizontal */;
+    align-items: center; /* vertical */
+  }
+  
+  .card-container{
+    width: 20%;
+    background-color: #FFFFFE;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  .card-container:hover{
+    cursor: pointer;
+    transform: translate(0%, -2%);
+    box-shadow: 7px 10px 5px 0px rgba(0,0,0,0.75);
+    transition: all 0.5s;
+  }
+  
+  .img-container{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* horizontal */;
+    align-items: center; /* vertical */
+  }
+
+  @keyframes bajar {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes deslizar {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes deslizar2 {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  img{
+    width: 100%;
+    border-radius: 1.5rem;
+    animation-name: bajar;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-direction: normal;
+  }
+
+  h1{
+    text-align: center;
+    color: #0086FF;
+    font-weight: 800;
+    margin: 0;
+    animation: deslizar 1s 1s normal;
+  }
+
+  *{
+    font-family: 'Outfit';
+  }
+  p{
+    margin: 0;
+    font-weight: 200;
+    animation: deslizar2 1s 1s normal;
+  }
+
+
+  
+</style>
+</html>
