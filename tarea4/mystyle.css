@@ -1,0 +1,91 @@
+*{box-sizing: border-box;}
+h1{
+text-align: center;
+font-size: 4em;
+
+}
+
+body{
+background-color: #ebebeb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.caja{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 0 auto;
+    align-items: center;  
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.44);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.44);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.44);
+    border-radius: 15px;
+    
+}
+
+.producto{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+padding: 1em;
+margin: 1em;
+
+}
+.productoDentro{
+    display: flex;
+    justify-content: center;
+
+}
+
+.productoTexto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2em;
+}
+
+.productoPrecio{
+    justify-content: center;
+}
+img{
+    border-radius: 15px;
+    margin: 1em 1em;
+    height: 8.5em;
+    width: 8em;
+}
+
+.detalles{
+    display: flex;
+    justify-content: space-around;
+    margin: 0.5em;
+    margin-left: 1em;
+    gap: 0.4em;
+}
+.papelera{
+    color: red;
+
+}
+
+.productoPrecio input{
+       appearance: textfield;
+       width: 20%;
+       text-align: center;
+       border-radius: 5px;
+       border: 1px solid #ddd;
+    
+}
+
+.productoPrecio input:hover{
+    border: 1px solid #3f9c43;
+ 
+}
+
+botonAbajo{
+
+
+}
+botones{
+    display: flex;
+}
